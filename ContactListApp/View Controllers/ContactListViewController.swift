@@ -9,20 +9,15 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    private let persons = Person.getPersons()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = 40
-    }
+    var persons: [Person]!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        let detailsVS = segue.destination as? PersonDetailsViewController
-        detailsVS?.person = persons[indexPath.row]
         
+        if let detailsVC = segue.destination as? PersonDetailsViewController {
+            detailsVC.person = persons[indexPath.row]
+        }
     }
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -42,5 +37,13 @@ extension ContactListViewController {
         return cell
     }
 }
+
+// MARK: - UITableViewDelegate
+extension ContactListViewController {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        40
+    }
+}
+
 
     

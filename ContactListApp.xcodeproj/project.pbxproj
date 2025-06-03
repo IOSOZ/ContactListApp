@@ -10,22 +10,9 @@
 		6CB0BF9D2DEA7D9800D3ED66 /* ContactListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6CB0BFAF2DEA7D9A00D3ED66 /* Exceptions for "ContactListApp" folder in "ContactListApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 6CB0BF9C2DEA7D9800D3ED66 /* ContactListApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6CB0BF9F2DEA7D9800D3ED66 /* ContactListApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6CB0BFAF2DEA7D9A00D3ED66 /* Exceptions for "ContactListApp" folder in "ContactListApp" target */,
-			);
 			path = ContactListApp;
 			sourceTree = "<group>";
 		};
