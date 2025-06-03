@@ -7,20 +7,19 @@
 
 import UIKit
 
-class CoolContactListViewController: UITableViewController {
+final class CoolContactListViewController: UITableViewController {
     
     var persons: [Person]!
-
 }
 
 // MARK: - UITableViewDataSource
 extension CoolContactListViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
-    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

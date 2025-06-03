@@ -38,6 +38,7 @@ extension ContactListViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension ContactListViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         40
